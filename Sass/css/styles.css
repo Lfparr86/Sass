@@ -1,0 +1,48 @@
+h1 {
+  font-size: 50%;
+  color: blue;
+  background-color: red;
+  width: 50%;
+  margin-left: 10%;
+}
+
+body {
+  background-color: aquamarine;
+}
+body div {
+  background-color: orange;
+  width: 33.3333333333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body div p {
+  color: red;
+}
+body div ul {
+  margin: 2%;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+body div ul li {
+  color: aqua;
+}
+
+li:nth-child(1) {
+  color: fununo;
+}
+
+li:nth-child(2) {
+  color: fununo;
+}
+
+li:nth-child(3) {
+  color: fununo;
+}
+
+li:nth-child(4) {
+  color: fununo;
+}

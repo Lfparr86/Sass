@@ -1,0 +1,52 @@
+@mixin mixuno {
+    margin-left: 10%;
+}
+@mixin mixdos {
+    display: flex;
+    align-items: center;
+}
+$color1: red;
+$color2: blue;
+$color3: orange;
+$color4: aquamarine;
+$border1: 1px solid red;
+$border2: 1px solid blue;
+h1{
+    font-size: 50%;
+    color:$color2;
+    background-color: red;
+    width: 25%*2;
+    @include mixuno();
+}
+body{
+    background-color: $color4;
+    div{
+        background-color: $color3;
+        width: (100%/3);
+        @include mixdos();
+        p{
+            color:$color1
+            
+        }
+        ul{
+            margin: 2%;
+            text-decoration: solid;
+            li{
+                color: aqua;
+            }
+        }
+}
+
+}
+$rainbow: purple aqua lime yellow orange red;
+@for $i from 1 through 4 {
+    li:nth-child(#{$i}) {
+        color:fununo;
+    }
+}
+@function fununo(){
+    @return nth($rainbow, $i);
+}
+
+
+
